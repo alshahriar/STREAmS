@@ -1,0 +1,499 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+100	generatewmean.F90	/^ 100  format(20ES20.10)$/;"	l	subroutine:generatewmean	file:
+100	printres.F90	/^ 100 format(1I10,40ES20.10)$/;"	l	subroutine:printres	file:
+100	step.F90	/^ 100  format(20ES20.10)$/;"	l	subroutine:checkdt	file:
+100	target_reystress.F90	/^ 100 format(20ES20.10)$/;"	l	subroutine:target_reystress	file:
+100	writerst.F90	/^  100     format(20ES20.10)$/;"	l	subroutine:writerst	file:
+100	writerst.F90	/^  100     format(20ES20.10)$/;"	l	subroutine:writerst_serial	file:
+100	writestatbl.F90	/^ 100 format(200ES20.10)$/;"	l	subroutine:writestatbl	file:
+100	writestatchann.F90	/^ 100  format(200ES20.10)$/;"	l	subroutine:writestatchann	file:
+100	writestatzbl.F90	/^ 100 format(200ES20.10)$/;"	l	subroutine:writestatzbl	file:
+1002	writestatbl.F90	/^ 1002 format(I2.2)$/;"	l	subroutine:writestatbl	file:
+1003	constants.F90	/^ 1003 format(I3.3)$/;"	l	subroutine:constants	file:
+1004	writefield.F90	/^ 1004 format(I4.4)$/;"	l	subroutine:writefield	file:
+1004	writefieldvtk.F90	/^ 1004 format(I4.4)$/;"	l	subroutine:writefieldvtk	file:
+1004	writestatzbl.F90	/^ 1004 format(I4.4)$/;"	l	subroutine:writestatzbl	file:
+COMPILE	Makefile	/^COMPILE = "gnu"$/;"	m
+CUDA_HOME	Makefile	/^    CUDA_HOME = $(CRAY_CUDATOOLKIT_DIR)$/;"	m
+EULERCENTRAL_THREADS_X	cuda_definitions.h	3;"	d
+EULERCENTRAL_THREADS_X	cuda_definitions.h	9;"	d
+EULERCENTRAL_THREADS_Y	cuda_definitions.h	10;"	d
+EULERCENTRAL_THREADS_Y	cuda_definitions.h	4;"	d
+EULERWENO_THREADS_X	cuda_definitions.h	11;"	d
+EULERWENO_THREADS_X	cuda_definitions.h	5;"	d
+EULERWENO_THREADS_Y	cuda_definitions.h	12;"	d
+EULERWENO_THREADS_Y	cuda_definitions.h	6;"	d
+EXEC	Makefile	/^EXEC = streams.exe$/;"	m
+FC	Makefile	/^    FC        = pgf90$/;"	m
+FC	Makefile	/^    FC = \/cineca\/prod\/opt\/compilers\/pgi\/19.10\/binary\/linuxpower\/2019\/mpi\/openmpi-3.1.3\/bin\/mpif90$/;"	m
+FC	Makefile	/^    FC = mpif90 $/;"	m
+FC	Makefile	/^    FC = mpif90$/;"	m
+FC	Makefile	/^    FC = mpiifort$/;"	m
+FC	Makefile	/^    FC = mpipgifort #mpif90 $/;"	m
+FC	Makefile	/^    FC = mpipgifort$/;"	m
+FCLIBS	Makefile	/^    FCLIBS    = -L$(MPICH_DIR)\/lib -lmpich $/;"	m
+INCLUDE	Makefile	/^    INCLUDE   = -I $(MPICH_DIR)\/include $/;"	m
+LDFLAGS	Makefile	/^    LDFLAGS   = -L$(CUDA_HOME)\/lib64$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS =$/;"	m
+MAIN	Makefile	/^MAIN = main.o$/;"	m
+MODE	Makefile	/^MODE    = "opt"$/;"	m
+MYKIND	cuda_definitions.h	2;"	d
+MYKIND	cuda_definitions.h	8;"	d
+OBJS	Makefile	/^OBJS = $(OBJ_MODS) $(OBJ_FILES) $(MAIN)$/;"	m
+OBJ_FILES	Makefile	/^OBJ_FILES = alloc.o bcdf.o bcextr.o bcfree.o bc.o bcrelax.o bcshk.o bcswap.o \\$/;"	m
+OBJ_MODS	Makefile	/^OBJ_MODS = mod_streams.o mod_sys.o euler.o$/;"	m
+OLEVEL	Makefile	/^        OLEVEL = -Mcuda=ccall -DUSE_CUDA -DCUDA_ASYNC -g -DNOCUDAAWAREMPI$/;"	m
+OLEVEL	Makefile	/^        OLEVEL = -Mcuda=ccall,cuda10.0 -DUSE_CUDA -DCUDA_ASYNC$/;"	m
+OLEVEL	Makefile	/^        OLEVEL = -Mcuda=ccall,cuda10.0 -DUSE_CUDA$/;"	m
+OLEVEL	Makefile	/^        OLEVEL = -O2 -Mbounds -Ktrap=fp -g$/;"	m
+OLEVEL	Makefile	/^        OLEVEL = -O2 -check bounds,uninit -g -fpe0 -traceback$/;"	m
+OLEVEL	Makefile	/^        OLEVEL = -O2 -fbounds-check -g -fbacktrace -fdump-core -ffpe-trap=zero,invalid,overflow$/;"	m
+OLEVEL	Makefile	/^        OLEVEL = -O2 -g$/;"	m
+OLEVEL	Makefile	/^        OLEVEL = -O3 $/;"	m
+OLEVEL	Makefile	/^        OLEVEL = -O3 -Mcuda=ccall -DUSE_CUDA -DCUDA_ASYNC -DNOCUDAAWAREMPI$/;"	m
+OLEVEL	Makefile	/^        OLEVEL = -O3 -Mcuda=ccall,cuda10.0 -DUSE_CUDA$/;"	m
+OLEVEL	Makefile	/^        OLEVEL = -O3 -Mcuda=ccall,cuda10.1 -DUSE_CUDA -DCUDA_ASYNC #-DNOCUDAAWAREMPI$/;"	m
+OLEVEL	Makefile	/^        OLEVEL = -O3$/;"	m
+OLEVEL	Makefile	/^        OLEVEL = -O4$/;"	m
+PREC	Makefile	/^PREC    = "double"$/;"	m
+PRECFLAGS	Makefile	/^    PRECFLAGS = -DSINGLE_PRECISION $/;"	m
+RM	Makefile	/^RM = rm -f$/;"	m
+aeroheat	mod_streams.F90	/^ real(mykind) :: heatflux,aeroheat,/;"	v	module:mod_streams
+allocate_vars	alloc.F90	/^subroutine allocate_vars(/;"	s
+alpdt	mod_streams.F90	/^ real(mykind) :: dtglobal,cfl,dtmin,alpdt,/;"	v	module:mod_streams
+alpdtold	mod_streams.F90	/^ real(mykind) :: dtglobal,cfl,dtmin,alpdt,telaps,telaps0,alpdtold$/;"	v	module:mod_streams
+amat_df	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: amat_df,/;"	v	module:mod_streams
+amat_df_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: amat_df,amat_df_gpu$/;"	v	module:mod_streams
+bc	bc.F90	/^subroutine bc(/;"	s
+bcdf	bcdf.F90	/^subroutine bcdf(/;"	s
+bcextr	bcextr.F90	/^subroutine bcextr(/;"	s
+bcfree	bcfree.F90	/^subroutine bcfree(/;"	s
+bcrelax	bcrelax.F90	/^subroutine bcrelax(/;"	s
+bcshk	bcshk.F90	/^subroutine bcshk(/;"	s
+bcswap	bcswap.F90	/^subroutine bcswap$/;"	s
+bcswap_prepare	bcswap.F90	/^subroutine bcswap_prepare$/;"	s
+bcswapdiv	bcswap.F90	/^subroutine bcswapdiv$/;"	s
+bcswapdiv_prepare	bcswap.F90	/^subroutine bcswapdiv_prepare$/;"	s
+bcswapduc	bcswap.F90	/^subroutine bcswapduc$/;"	s
+bcswapduc_prepare	bcswap.F90	/^subroutine bcswapduc_prepare$/;"	s
+bcwall	bcwall.F90	/^subroutine bcwall(/;"	s
+bcwall_pl	bcwall_pl.F90	/^subroutine bcwall_pl(/;"	s
+bcwall_staggered	bcwall_staggered.F90	/^subroutine bcwall_staggered(/;"	s
+bulk5g_gpu	mod_streams.F90	/^ real(mykind), allocatable, dimension(:) :: bulk5g_gpu$/;"	v	module:mod_streams
+bulkcooling	mod_streams.F90	/^ real(mykind) :: heatflux,aeroheat,bulkcooling$/;"	v	module:mod_streams
+bx_df	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: bx_df,/;"	v	module:mod_streams
+by_df	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: bx_df,by_df,/;"	v	module:mod_streams
+by_df_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: by_df_gpu,/;"	v	module:mod_streams
+bz_df	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: bx_df,by_df,bz_df$/;"	v	module:mod_streams
+bz_df_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: by_df_gpu,bz_df_gpu$/;"	v	module:mod_streams
+cfl	mod_streams.F90	/^ real(mykind) :: dtglobal,cfl,/;"	v	module:mod_streams
+check_input	check_input.F90	/^subroutine check_input(/;"	s
+checkdt	step.F90	/^subroutine checkdt$/;"	s
+chx	mod_streams.F90	/^ character(3) :: chx,/;"	v	module:mod_streams
+chy	mod_streams.F90	/^ character(3) :: chx,chy,/;"	v	module:mod_streams
+chz	mod_streams.F90	/^ character(3) :: chx,chy,chz$/;"	v	module:mod_streams
+coeff_clap	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: coeff_clap$/;"	v	module:mod_streams
+coeff_clap_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: coeff_clap_gpu$/;"	v	module:mod_streams
+coeff_deriv1	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: coeff_deriv1$/;"	v	module:mod_streams
+coeff_deriv1_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: coeff_deriv1_gpu$/;"	v	module:mod_streams
+coeff_deriv1s	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: coeff_deriv1s$/;"	v	module:mod_streams
+coeff_deriv1s_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: coeff_deriv1s_gpu$/;"	v	module:mod_streams
+coeff_midpi	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: coeff_midpi$/;"	v	module:mod_streams
+coeff_midpi_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: coeff_midpi_gpu$/;"	v	module:mod_streams
+compute_av	computeav.F90	/^subroutine compute_av$/;"	s
+compute_av1d	computeav.F90	/^subroutine compute_av1d$/;"	s
+computemetrics	computemetrics.F90	/^subroutine computemetrics$/;"	s
+computeresidual	computeresidual.F90	/^subroutine computeresidual$/;"	s
+constants	constants.F90	/^subroutine constants$/;"	s
+copy_cpu_to_gpu	alloc.F90	/^subroutine copy_cpu_to_gpu(/;"	s
+copy_gpu_to_cpu	alloc.F90	/^subroutine copy_gpu_to_cpu$/;"	s
+cx_midpi	mod_streams.F90	/^ real(mykind), dimension(:,:), allocatable :: cx_midpi,/;"	v	module:mod_streams
+cx_midpi_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:), allocatable :: cx_midpi_gpu,/;"	v	module:mod_streams
+cy_midpi	mod_streams.F90	/^ real(mykind), dimension(:,:), allocatable :: cx_midpi,cy_midpi,/;"	v	module:mod_streams
+cy_midpi_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:), allocatable :: cx_midpi_gpu,cy_midpi_gpu,/;"	v	module:mod_streams
+cz_midpi	mod_streams.F90	/^ real(mykind), dimension(:,:), allocatable :: cx_midpi,cy_midpi,cz_midpi$/;"	v	module:mod_streams
+cz_midpi_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:), allocatable :: cx_midpi_gpu,cy_midpi_gpu,cz_midpi_gpu$/;"	v	module:mod_streams
+dcoe	mod_streams.F90	/^ real(mykind), dimension(:,:), allocatable :: dcoe$/;"	v	module:mod_streams
+dcoe_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:), allocatable :: dcoe_gpu$/;"	v	module:mod_streams
+dcsidx	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: dcsidx,/;"	v	module:mod_streams
+dcsidx2	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: dcsidx,dcsidx2,/;"	v	module:mod_streams
+dcsidx2_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: dcsidx_gpu,dcsidx2_gpu,/;"	v	module:mod_streams
+dcsidx_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: dcsidx_gpu,/;"	v	module:mod_streams
+dcsidxh	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: dcsidxh,/;"	v	module:mod_streams
+dcsidxh_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: dcsidxh_gpu,/;"	v	module:mod_streams
+dcsidxs	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: dcsidx,dcsidx2,dcsidxs$/;"	v	module:mod_streams
+dcsidxs_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: dcsidx_gpu,dcsidx2_gpu,dcsidxs_gpu$/;"	v	module:mod_streams
+deflec	mod_streams.F90	/^ real(mykind) :: ximp,thetas,deflec,/;"	v	module:mod_streams
+detady	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: detady,/;"	v	module:mod_streams
+detady2	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: detady,detady2,/;"	v	module:mod_streams
+detady2_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: detady_gpu,detady2_gpu,/;"	v	module:mod_streams
+detady_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: detady_gpu,/;"	v	module:mod_streams
+detadyh	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: dcsidxh,detadyh,/;"	v	module:mod_streams
+detadyh_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: dcsidxh_gpu,detadyh_gpu,/;"	v	module:mod_streams
+detadys	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: detady,detady2,detadys$/;"	v	module:mod_streams
+detadys_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: detady_gpu,detady2_gpu,detadys_gpu$/;"	v	module:mod_streams
+df_par	df_par.F90	/^subroutine df_par$/;"	s
+dftscaling	mod_streams.F90	/^ real(mykind) :: dftscaling$/;"	v	module:mod_streams
+dfupdated	mod_streams.F90	/^ logical :: dfupdated$/;"	v	module:mod_streams
+divbuf1r	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: divbuf1r,/;"	v	module:mod_streams
+divbuf1r_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: divbuf1r_gpu,/;"	v	module:mod_streams
+divbuf1s	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: divbuf1s,/;"	v	module:mod_streams
+divbuf1s_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: divbuf1s_gpu,/;"	v	module:mod_streams
+divbuf2r	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: divbuf1r, divbuf2r,/;"	v	module:mod_streams
+divbuf2r_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: divbuf1r_gpu, divbuf2r_gpu,/;"	v	module:mod_streams
+divbuf2s	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: divbuf1s, divbuf2s,/;"	v	module:mod_streams
+divbuf2s_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: divbuf1s_gpu, divbuf2s_gpu,/;"	v	module:mod_streams
+divbuf3r	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: divbuf1r, divbuf2r, divbuf3r,/;"	v	module:mod_streams
+divbuf3r_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: divbuf1r_gpu, divbuf2r_gpu, divbuf3r_gpu,/;"	v	module:mod_streams
+divbuf3s	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: divbuf1s, divbuf2s, divbuf3s,/;"	v	module:mod_streams
+divbuf3s_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: divbuf1s_gpu, divbuf2s_gpu, divbuf3s_gpu,/;"	v	module:mod_streams
+divbuf4r	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: divbuf1r, divbuf2r, divbuf3r, divbuf4r,/;"	v	module:mod_streams
+divbuf4r_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: divbuf1r_gpu, divbuf2r_gpu, divbuf3r_gpu, divbuf4r_gpu,/;"	v	module:mod_streams
+divbuf4s	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: divbuf1s, divbuf2s, divbuf3s, divbuf4s,/;"	v	module:mod_streams
+divbuf4s_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: divbuf1s_gpu, divbuf2s_gpu, divbuf3s_gpu, divbuf4s_gpu,/;"	v	module:mod_streams
+divbuf5r	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: divbuf1r, divbuf2r, divbuf3r, divbuf4r, divbuf5r,/;"	v	module:mod_streams
+divbuf5r_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: divbuf1r_gpu, divbuf2r_gpu, divbuf3r_gpu, divbuf4r_gpu, divbuf5r_gpu,/;"	v	module:mod_streams
+divbuf5s	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: divbuf1s, divbuf2s, divbuf3s, divbuf4s, divbuf5s,/;"	v	module:mod_streams
+divbuf5s_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: divbuf1s_gpu, divbuf2s_gpu, divbuf3s_gpu, divbuf4s_gpu, divbuf5s_gpu,/;"	v	module:mod_streams
+divbuf6r	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: divbuf1r, divbuf2r, divbuf3r, divbuf4r, divbuf5r, divbuf6r$/;"	v	module:mod_streams
+divbuf6r_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: divbuf1r_gpu, divbuf2r_gpu, divbuf3r_gpu, divbuf4r_gpu, divbuf5r_gpu, divbuf6r_gpu$/;"	v	module:mod_streams
+divbuf6s	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: divbuf1s, divbuf2s, divbuf3s, divbuf4s, divbuf5s, divbuf6s$/;"	v	module:mod_streams
+divbuf6s_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: divbuf1s_gpu, divbuf2s_gpu, divbuf3s_gpu, divbuf4s_gpu, divbuf5s_gpu, divbuf6s_gpu$/;"	v	module:mod_streams
+doubtype	mod_streams.F90	/^ integer, parameter :: doubtype /;"	v	module:mod_streams
+dpdx	mod_streams.F90	/^ real(mykind) :: dpdx,/;"	v	module:mod_streams
+dtglobal	mod_streams.F90	/^ real(mykind) :: dtglobal,/;"	v	module:mod_streams
+dtmin	mod_streams.F90	/^ real(mykind) :: dtglobal,cfl,dtmin,/;"	v	module:mod_streams
+dtsave	mod_streams.F90	/^ real(mykind) :: dtsave,/;"	v	module:mod_streams
+dtsave_restart	mod_streams.F90	/^ real(mykind) :: dtsave, dtsave_restart$/;"	v	module:mod_streams
+ducbuf1r	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducbuf1r,/;"	v	module:mod_streams
+ducbuf1r_gpu	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducbuf1r_gpu,/;"	v	module:mod_streams
+ducbuf1s	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducbuf1s,/;"	v	module:mod_streams
+ducbuf1s_gpu	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducbuf1s_gpu,/;"	v	module:mod_streams
+ducbuf2r	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducbuf1r, ducbuf2r,/;"	v	module:mod_streams
+ducbuf2r_gpu	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducbuf1r_gpu, ducbuf2r_gpu,/;"	v	module:mod_streams
+ducbuf2s	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducbuf1s, ducbuf2s,/;"	v	module:mod_streams
+ducbuf2s_gpu	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducbuf1s_gpu, ducbuf2s_gpu,/;"	v	module:mod_streams
+ducbuf3r	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducbuf1r, ducbuf2r, ducbuf3r,/;"	v	module:mod_streams
+ducbuf3r_gpu	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducbuf1r_gpu, ducbuf2r_gpu, ducbuf3r_gpu,/;"	v	module:mod_streams
+ducbuf3s	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducbuf1s, ducbuf2s, ducbuf3s,/;"	v	module:mod_streams
+ducbuf3s_gpu	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducbuf1s_gpu, ducbuf2s_gpu, ducbuf3s_gpu,/;"	v	module:mod_streams
+ducbuf4r	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducbuf1r, ducbuf2r, ducbuf3r, ducbuf4r,/;"	v	module:mod_streams
+ducbuf4r_gpu	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducbuf1r_gpu, ducbuf2r_gpu, ducbuf3r_gpu, ducbuf4r_gpu,/;"	v	module:mod_streams
+ducbuf4s	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducbuf1s, ducbuf2s, ducbuf3s, ducbuf4s,/;"	v	module:mod_streams
+ducbuf4s_gpu	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducbuf1s_gpu, ducbuf2s_gpu, ducbuf3s_gpu, ducbuf4s_gpu,/;"	v	module:mod_streams
+ducbuf5r	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducbuf1r, ducbuf2r, ducbuf3r, ducbuf4r, ducbuf5r,/;"	v	module:mod_streams
+ducbuf5r_gpu	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducbuf1r_gpu, ducbuf2r_gpu, ducbuf3r_gpu, ducbuf4r_gpu, ducbuf5r_gpu,/;"	v	module:mod_streams
+ducbuf5s	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducbuf1s, ducbuf2s, ducbuf3s, ducbuf4s, ducbuf5s,/;"	v	module:mod_streams
+ducbuf5s_gpu	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducbuf1s_gpu, ducbuf2s_gpu, ducbuf3s_gpu, ducbuf4s_gpu, ducbuf5s_gpu,/;"	v	module:mod_streams
+ducbuf6r	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducbuf1r, ducbuf2r, ducbuf3r, ducbuf4r, ducbuf5r, ducbuf6r$/;"	v	module:mod_streams
+ducbuf6r_gpu	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducbuf1r_gpu, ducbuf2r_gpu, ducbuf3r_gpu, ducbuf4r_gpu, ducbuf5r_gpu, ducbuf6r_gpu$/;"	v	module:mod_streams
+ducbuf6s	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducbuf1s, ducbuf2s, ducbuf3s, ducbuf4s, ducbuf5s, ducbuf6s$/;"	v	module:mod_streams
+ducbuf6s_gpu	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducbuf1s_gpu, ducbuf2s_gpu, ducbuf3s_gpu, ducbuf4s_gpu, ducbuf5s_gpu, ducbuf6s_gpu$/;"	v	module:mod_streams
+ducros	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducros,/;"	v	module:mod_streams
+ducros_gpu	mod_streams.F90	/^ logical, dimension(:,:,:), allocatable :: ducros,ducros_gpu$/;"	v	module:mod_streams
+dxg	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: dxg,/;"	v	module:mod_streams
+dyg	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: dxg,dyg,/;"	v	module:mod_streams
+dyp_target	mod_streams.F90	/^ real(mykind) :: rlx,rly,rlz,rlywr,dyp_target$/;"	v	module:mod_streams
+dzg	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: dxg,dyg,dzg$/;"	v	module:mod_streams
+dzitdz	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: dzitdz,/;"	v	module:mod_streams
+dzitdz2	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: dzitdz,dzitdz2,/;"	v	module:mod_streams
+dzitdz2_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: dzitdz_gpu,dzitdz2_gpu,/;"	v	module:mod_streams
+dzitdz_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: dzitdz_gpu,/;"	v	module:mod_streams
+dzitdzh	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: dcsidxh,detadyh,dzitdzh$/;"	v	module:mod_streams
+dzitdzh_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: dcsidxh_gpu,detadyh_gpu,dzitdzh_gpu$/;"	v	module:mod_streams
+dzitdzs	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: dzitdz,dzitdz2,dzitdzs$/;"	v	module:mod_streams
+dzitdzs_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: dzitdz_gpu,dzitdz2_gpu,dzitdzs_gpu$/;"	v	module:mod_streams
+enable_plot3d	mod_streams.F90	/^ integer :: enable_plot3d,/;"	v	module:mod_streams
+enable_vtk	mod_streams.F90	/^ integer :: enable_plot3d, enable_vtk$/;"	v	module:mod_streams
+euler_i	euler.F90	/^subroutine euler_i(/;"	s
+euler_j	euler.F90	/^subroutine euler_j$/;"	s
+euler_k	euler.F90	/^subroutine euler_k$/;"	s
+evmax_mat_y	mod_streams.F90	/^ real(mykind), allocatable, dimension(:) :: evmax_mat_y$/;"	v	module:mod_streams
+evmax_mat_yz	mod_streams.F90	/^ real(mykind), allocatable, dimension(:,:) :: evmax_mat_yz$/;"	v	module:mod_streams
+fail_input	check_input.F90	/^subroutine fail_input(/;"	s
+fhat	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: fhat,/;"	v	module:mod_streams
+fhat_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: fhat,fhat_gpu$/;"	v	module:mod_streams
+fhat_trans_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: fhat_trans_gpu,/;"	v	module:mod_streams
+finalize	finalize.F90	/^subroutine finalize$/;"	s
+fl	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: w,fl,/;"	v	module:mod_streams
+fl_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: w_gpu,fl_gpu,/;"	v	module:mod_streams
+fl_trans_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: fhat_trans_gpu, fl_trans_gpu$/;"	v	module:mod_streams
+fln	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: w,fl,fln$/;"	v	module:mod_streams
+fln_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: w_gpu,fl_gpu,fln_gpu$/;"	v	module:mod_streams
+gamma	mod_streams.F90	/^ real(mykind), parameter :: gamma /;"	v	module:mod_streams
+gamvec	mod_streams.F90	/^ real(mykind), dimension(3) :: gamvec,/;"	v	module:mod_streams
+gasdev_s	utility.F90	/^subroutine gasdev_s(/;"	s
+generategrid	generategrid.F90	/^subroutine generategrid$/;"	s
+generateinflowrand	generateinflowrand.F90	/^subroutine generateinflowrand$/;"	s
+generatewmean	generatewmean.F90	/^subroutine generatewmean$/;"	s
+generatewmean_channel	generatewmean_channel.F90	/^subroutine generatewmean_channel$/;"	s
+get_reynolds	utility.F90	/^subroutine get_reynolds(/;"	s
+get_reynolds_chan	utility.F90	/^subroutine get_reynolds_chan(/;"	s
+ggmopr	mod_streams.F90	/^ real(mykind), parameter :: ggmopr /;"	v	module:mod_streams
+gm	mod_streams.F90	/^ real(mykind), parameter :: gm /;"	v	module:mod_streams
+gm1	mod_streams.F90	/^ real(mykind), parameter :: gm1 /;"	v	module:mod_streams
+gminus_x	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: gplus_x,gminus_x$/;"	v	module:mod_streams
+gminus_y	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: gplus_y,gminus_y$/;"	v	module:mod_streams
+gminus_z	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: gplus_z,gminus_z$/;"	v	module:mod_streams
+gplus_x	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: gplus_x,/;"	v	module:mod_streams
+gplus_y	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: gplus_y,/;"	v	module:mod_streams
+gplus_z	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: gplus_z,/;"	v	module:mod_streams
+heatflux	mod_streams.F90	/^ real(mykind) :: heatflux,/;"	v	module:mod_streams
+heatflux_compute	heatflux_compute.F90	/^subroutine heatflux_compute$/;"	s
+ibc	mod_streams.F90	/^ integer, dimension(:), allocatable :: ibc,/;"	v	module:mod_streams
+ibcnr	mod_streams.F90	/^ integer, dimension(:), allocatable :: ibc,ibcnr$/;"	v	module:mod_streams
+ibcnr_gpu	mod_streams.F90	/^ integer, dimension(:), allocatable :: ibcnr_gpu$/;"	v	module:mod_streams
+icyc	mod_streams.F90	/^ integer :: icyc,/;"	v	module:mod_streams
+idiski	mod_streams.F90	/^ integer :: idiski,/;"	v	module:mod_streams
+iercuda	mod_streams.F90	/^ integer :: iermpi, iercuda$/;"	v	module:mod_streams
+iermpi	mod_streams.F90	/^ integer :: iermpi,/;"	v	module:mod_streams
+iflow	mod_streams.F90	/^ integer :: iflow$/;"	v	module:mod_streams
+igxstat	mod_streams.F90	/^ integer     , dimension(:), allocatable     :: igxstat$/;"	v	module:mod_streams
+ileftx	mod_streams.F90	/^ integer :: ileftx,/;"	v	module:mod_streams
+ilefty	mod_streams.F90	/^ integer :: ileftx,irightx,ilefty,/;"	v	module:mod_streams
+ileftz	mod_streams.F90	/^ integer :: ileftx,irightx,ilefty,irighty,ileftz,/;"	v	module:mod_streams
+init	init.F90	/^subroutine init$/;"	s
+init_channel	init_channel.F90	/^subroutine init_channel$/;"	s
+init_random_seed	utility.F90	/^subroutine init_random_seed(/;"	s
+init_windtunnel	init_windtunnel.F90	/^subroutine init_windtunnel$/;"	s
+initurb	initurb.F90	/^subroutine initurb$/;"	s
+int2str	writefieldvtk.F90	/^function int2str(/;"	f
+int2str_o	writefieldvtk.F90	/^function int2str_o(/;"	f
+io_type	mod_streams.F90	/^ integer :: io_type$/;"	v	module:mod_streams
+iorder	mod_streams.F90	/^ integer :: iorder,/;"	v	module:mod_streams
+irightx	mod_streams.F90	/^ integer :: ileftx,irightx,/;"	v	module:mod_streams
+irighty	mod_streams.F90	/^ integer :: ileftx,irightx,ilefty,irighty,/;"	v	module:mod_streams
+irightz	mod_streams.F90	/^ integer :: ileftx,irightx,ilefty,irighty,ileftz,irightz$/;"	v	module:mod_streams
+istat	mod_streams.F90	/^ integer :: istat,/;"	v	module:mod_streams
+istatus	mod_streams.F90	/^ integer, dimension(mpi_status_size) :: istatus$/;"	v	module:mod_streams
+istore	mod_streams.F90	/^ integer :: istore,/;"	v	module:mod_streams
+istore_restart	mod_streams.F90	/^ integer :: istore, istore_restart /;"	v	module:mod_streams
+itav	mod_streams.F90	/^ integer :: istat,itav,/;"	v	module:mod_streams
+itmax	mod_streams.F90	/^ integer, parameter :: itmax /;"	v	module:mod_streams
+ivis	mod_streams.F90	/^ integer :: ivis$/;"	v	module:mod_streams
+iweno	mod_streams.F90	/^ integer :: iorder,iweno$/;"	v	module:mod_streams
+ixstat	mod_streams.F90	/^ integer     , dimension(:), allocatable     :: ixstat$/;"	v	module:mod_streams
+jbchan	mod_streams.F90	/^ integer :: jbchan /;"	v	module:mod_streams
+locateval	utility.F90	/^subroutine locateval(/;"	s
+main	main.F90	/^program main$/;"	p
+masterproc	mod_streams.F90	/^ logical :: masterproc$/;"	v	module:mod_streams
+meanvelocity	utility.F90	/^subroutine meanvelocity(/;"	s
+mod_streams	mod_streams.F90	/^module mod_streams$/;"	m
+mod_sys	mod_sys.F90	/^module mod_sys$/;"	m
+mp_cart	mod_streams.F90	/^ integer :: mp_cart,/;"	v	module:mod_streams
+mp_cartx	mod_streams.F90	/^ integer :: mp_cart,mp_cartx,/;"	v	module:mod_streams
+mp_carty	mod_streams.F90	/^ integer :: mp_cart,mp_cartx,mp_carty,/;"	v	module:mod_streams
+mp_cartz	mod_streams.F90	/^ integer :: mp_cart,mp_cartx,mp_carty,mp_cartz$/;"	v	module:mod_streams
+mpi_prec	mod_streams.F90	/^ integer, parameter :: mpi_prec /;"	v	module:mod_streams
+mykind	mod_streams.F90	/^ integer, parameter :: mykind /;"	v	module:mod_streams
+nblocks	mod_streams.F90	/^ integer, dimension(:), allocatable  :: nblocks$/;"	v	module:mod_streams
+ncoords	mod_streams.F90	/^ integer, dimension(:), allocatable :: ncoords$/;"	v	module:mod_streams
+ncyc	mod_streams.F90	/^ integer :: icyc,ncyc,/;"	v	module:mod_streams
+ncyc0	mod_streams.F90	/^ integer :: icyc,ncyc,ncyc0,/;"	v	module:mod_streams
+ndim	mod_streams.F90	/^ integer :: idiski, ndim$/;"	v	module:mod_streams
+ndims	mod_streams.F90	/^ integer, parameter :: ndims /;"	v	module:mod_streams
+nfmax	mod_streams.F90	/^ integer, parameter :: nfmax /;"	v	module:mod_streams
+ng	mod_streams.F90	/^ integer :: ng /;"	v	module:mod_streams
+ngdf	mod_streams.F90	/^ integer :: ngdf /;"	v	module:mod_streams
+nprint	mod_streams.F90	/^ integer :: icyc,ncyc,ncyc0,nstep,nprint$/;"	v	module:mod_streams
+nproc	mod_streams.F90	/^ integer :: nrank,nproc,/;"	v	module:mod_streams
+nrank	mod_streams.F90	/^ integer :: nrank,/;"	v	module:mod_streams
+nrank_x	mod_streams.F90	/^ integer :: nrank,nproc,nrank_x,/;"	v	module:mod_streams
+nrank_y	mod_streams.F90	/^ integer :: nrank,nproc,nrank_x, nrank_y,/;"	v	module:mod_streams
+nrank_z	mod_streams.F90	/^ integer :: nrank,nproc,nrank_x, nrank_y, nrank_z$/;"	v	module:mod_streams
+nsmoo	mod_streams.F90	/^ integer, parameter :: nsmoo /;"	v	module:mod_streams
+nsolmax	mod_streams.F90	/^ integer, parameter :: nsolmax /;"	v	module:mod_streams
+nstat	mod_streams.F90	/^ integer :: istat,itav,nstat,/;"	v	module:mod_streams
+nstatloc	mod_streams.F90	/^ integer :: istat,itav,nstat,nstatloc$/;"	v	module:mod_streams
+nstep	mod_streams.F90	/^ integer :: icyc,ncyc,ncyc0,nstep,/;"	v	module:mod_streams
+nv	mod_streams.F90	/^ integer, parameter :: nv /;"	v	module:mod_streams
+nvmean	mod_streams.F90	/^ integer, parameter :: nvmean /;"	v	module:mod_streams
+nx	mod_streams.F90	/^ integer :: nx$/;"	v	module:mod_streams
+nxmax	mod_streams.F90	/^ integer :: nxmax$/;"	v	module:mod_streams
+ny	mod_streams.F90	/^ integer :: ny$/;"	v	module:mod_streams
+nymax	mod_streams.F90	/^ integer :: nymax,/;"	v	module:mod_streams
+nymaxwr	mod_streams.F90	/^ integer :: nymax,nymaxwr$/;"	v	module:mod_streams
+nz	mod_streams.F90	/^ integer :: nz$/;"	v	module:mod_streams
+nzmax	mod_streams.F90	/^ integer :: nzmax$/;"	v	module:mod_streams
+osw	osw.F90	/^subroutine osw$/;"	s
+p0	mod_streams.F90	/^ real(mykind) :: rho0,t0,p0,/;"	v	module:mod_streams
+pbc	mod_streams.F90	/^ logical, dimension(:), allocatable  :: pbc$/;"	v	module:mod_streams
+pgrad	pgrad.F90	/^subroutine pgrad$/;"	s
+pgradf	mod_streams.F90	/^ real(mykind) :: pgradf$/;"	v	module:mod_streams
+pi	mod_streams.F90	/^ real(mykind), parameter :: pi /;"	v	module:mod_streams
+pol_int	utility.F90	/^subroutine pol_int(/;"	s
+pr	mod_streams.F90	/^ real(mykind), parameter :: pr /;"	v	module:mod_streams
+prims	prims.F90	/^subroutine prims$/;"	s
+prims_ghost	prims.F90	/^subroutine prims_ghost$/;"	s
+prims_int	prims.F90	/^subroutine prims_int$/;"	s
+printres	printres.F90	/^subroutine printres$/;"	s
+rand_start	mod_streams.F90	/^ integer :: rand_start /;"	v	module:mod_streams
+re	mod_streams.F90	/^ rea/;"	v	module:mod_streams
+readdf	readdf.F90	/^subroutine readdf$/;"	s
+readdf_serial	readdf.F90	/^subroutine readdf_serial$/;"	s
+readgrid	readgrid.F90	/^subroutine readgrid$/;"	s
+readinp	readinp.F90	/^subroutine readinp$/;"	s
+readrst	readrst.F90	/^subroutine readrst$/;"	s
+readrst_serial	readrst.F90	/^subroutine readrst_serial$/;"	s
+readstat1d	readstat.F90	/^subroutine readstat1d$/;"	s
+readstat2d	readstat.F90	/^subroutine readstat2d$/;"	s
+readstat2d_serial	readstat.F90	/^subroutine readstat2d_serial$/;"	s
+reset_cpu_gpu	alloc.F90	/^subroutine reset_cpu_gpu$/;"	s
+retauinflow	mod_streams.F90	/^ real(mykind) :: rm,re,taw,sqgmr,s2tinf,retauinflow,/;"	v	module:mod_streams
+rf	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: rf,/;"	v	module:mod_streams
+rf_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: rf,rf_gpu,/;"	v	module:mod_streams
+rfac	mod_streams.F90	/^ real(mykind), parameter :: rfac /;"	v	module:mod_streams
+rfy	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: rf,rf_gpu,rfy,/;"	v	module:mod_streams
+rfy_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: rf,rf_gpu,rfy,rfy_gpu$/;"	v	module:mod_streams
+rho0	mod_streams.F90	/^ real(mykind) :: rho0,/;"	v	module:mod_streams
+rhobulk	mod_streams.F90	/^ real(mykind) :: dpdx,rhobulk,/;"	v	module:mod_streams
+rhovec	mod_streams.F90	/^ real(mykind), dimension(3) :: gamvec,rhovec$/;"	v	module:mod_streams
+rk	rk.F90	/^subroutine rk$/;"	s
+rlx	mod_streams.F90	/^ real(mykind) :: rlx,/;"	v	module:mod_streams
+rly	mod_streams.F90	/^ real(mykind) :: rlx,rly,/;"	v	module:mod_streams
+rlywr	mod_streams.F90	/^ real(mykind) :: rlx,rly,rlz,rlywr,/;"	v	module:mod_streams
+rlz	mod_streams.F90	/^ real(mykind) :: rlx,rly,rlz,/;"	v	module:mod_streams
+rm	mod_streams.F90	/^ real(mykind) :: rm,/;"	v	module:mod_streams
+rtrms	mod_streams.F90	/^ real(mykind) :: rtrms$/;"	v	module:mod_streams
+rtrms_ib_1d_gpu	mod_streams.F90	/^ real(mykind), allocatable, dimension(:) :: rtrms_ib_1d_gpu$/;"	v	module:mod_streams
+rtrms_ib_gpu	mod_streams.F90	/^ real(mykind), allocatable, dimension(:,:) :: rtrms_ib_gpu$/;"	v	module:mod_streams
+s0	mod_streams.F90	/^ real(mykind) :: rho0,t0,p0,u0,v0,w0,s0$/;"	v	module:mod_streams
+s2tinf	mod_streams.F90	/^ real(mykind) :: rm,re,taw,sqgmr,s2tinf,/;"	v	module:mod_streams
+sensor	sensor.F90	/^subroutine sensor$/;"	s
+setup	setup.F90	/^subroutine setup$/;"	s
+shock_angle	utility.F90	/^subroutine shock_angle(/;"	s
+singtype	mod_streams.F90	/^ integer, parameter :: singtype /;"	v	module:mod_streams
+slicexy	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: slicexy,/;"	v	module:mod_streams
+slicexy_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: slicexy,slicexy_gpu$/;"	v	module:mod_streams
+solver	solver.F90	/^subroutine solver$/;"	s
+sqgmr	mod_streams.F90	/^ real(mykind) :: rm,re,taw,sqgmr,/;"	v	module:mod_streams
+startmpi	startmpi.F90	/^subroutine startmpi$/;"	s
+stat_io	mod_streams.F90	/^ character(6) :: stat_io$/;"	v	module:mod_streams
+stats1d	stats.F90	/^subroutine stats1d$/;"	s
+stats2d	stats.F90	/^subroutine stats2d$/;"	s
+step	step.F90	/^subroutine step$/;"	s
+swap_ranfxz	digital_filtering_util.F90	/^subroutine swap_ranfxz(/;"	s
+swapz_extended_rf	digital_filtering_util.F90	/^subroutine swapz_extended_rf(/;"	s
+swapz_rf	digital_filtering_util.F90	/^subroutine swapz_rf(/;"	s
+t0	mod_streams.F90	/^ real(mykind) :: rho0,t0,/;"	v	module:mod_streams
+tanhsfac	mod_streams.F90	/^ real(mykind) :: ximp,thetas,deflec,tanhsfac,/;"	v	module:mod_streams
+target_reystress	target_reystress.F90	/^subroutine target_reystress$/;"	s
+target_tbulk	mod_streams.F90	/^ real(mykind) :: target_tbulk$/;"	v	module:mod_streams
+taw	mod_streams.F90	/^ real(mykind) :: rm,re,taw,/;"	v	module:mod_streams
+tbforce	tbforce.F90	/^subroutine tbforce$/;"	s
+tbulk	mod_streams.F90	/^ real(mykind) :: dpdx,rhobulk,ubulk,tbulk$/;"	v	module:mod_streams
+telaps	mod_streams.F90	/^ real(mykind) :: dtglobal,cfl,dtmin,alpdt,telaps,/;"	v	module:mod_streams
+telaps0	mod_streams.F90	/^ real(mykind) :: dtglobal,cfl,dtmin,alpdt,telaps,telaps0,/;"	v	module:mod_streams
+temperature	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: temperature$/;"	v	module:mod_streams
+temperature_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: temperature_gpu$/;"	v	module:mod_streams
+temperature_trans_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: temperature_trans_gpu$/;"	v	module:mod_streams
+thetas	mod_streams.F90	/^ real(mykind) :: ximp,thetas,/;"	v	module:mod_streams
+tol_iter	mod_streams.F90	/^ real(mykind), parameter :: tol_iter /;"	v	module:mod_streams
+trasp_xz_to_yz	digital_filtering_util.F90	/^subroutine trasp_xz_to_yz(/;"	s
+trasp_yz_to_xy	digital_filtering_util.F90	/^subroutine trasp_yz_to_xy(/;"	s
+trat	mod_streams.F90	/^ real(mykind) :: rm,re,taw,sqgmr,s2tinf,retauinflow,trat,/;"	v	module:mod_streams
+tref_dimensional	mod_streams.F90	/^ real(mykind) :: rm,re,taw,sqgmr,s2tinf,retauinflow,trat,twall,tref_dimensional$/;"	v	module:mod_streams
+tresduc	mod_streams.F90	/^ real(mykind) :: tresduc$/;"	v	module:mod_streams
+tsol	mod_streams.F90	/^ real(mykind), dimension(0:nsolmax) :: tsol,/;"	v	module:mod_streams
+tsol_restart	mod_streams.F90	/^ real(mykind), dimension(0:nsolmax) :: tsol, tsol_restart$/;"	v	module:mod_streams
+twall	mod_streams.F90	/^ real(mykind) :: rm,re,taw,sqgmr,s2tinf,retauinflow,trat,twall,/;"	v	module:mod_streams
+u0	mod_streams.F90	/^ real(mykind) :: rho0,t0,p0,u0,/;"	v	module:mod_streams
+ubulk	mod_streams.F90	/^ real(mykind) :: dpdx,rhobulk,ubulk,/;"	v	module:mod_streams
+uf	mod_streams.F90	/^ real(mykind), allocatable, dimension(:,:,:) :: uf$/;"	v	module:mod_streams
+updateghost	updateghost.F90	/^subroutine updateghost$/;"	s
+v0	mod_streams.F90	/^ real(mykind) :: rho0,t0,p0,u0,v0,/;"	v	module:mod_streams
+velmusker	utility.F90	/^ function velmusker(/;"	f
+vf_df	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: vf_df,/;"	v	module:mod_streams
+vf_df_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: vf_df,vf_df_gpu$/;"	v	module:mod_streams
+vf_df_old	mod_streams.F90	/^ real(mykind), allocatable, dimension(:,:,:) :: vf_df_old$/;"	v	module:mod_streams
+visc_type	mod_streams.F90	/^ integer :: visc_type$/;"	v	module:mod_streams
+visflx	visflx.F90	/^subroutine visflx$/;"	s
+visflx_div	visflx.F90	/^subroutine visflx_div$/;"	s
+vtexp	mod_streams.F90	/^ real(mykind), parameter :: vtexp /;"	v	module:mod_streams
+w	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: w,/;"	v	module:mod_streams
+w0	mod_streams.F90	/^ real(mykind) :: rho0,t0,p0,u0,v0,w0,/;"	v	module:mod_streams
+w_av	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: w_av,/;"	v	module:mod_streams
+w_av_1d	mod_streams.F90	/^ real(mykind), dimension(:,:  ), allocatable :: w_av_1d,/;"	v	module:mod_streams
+w_avxzg	mod_streams.F90	/^ real(mykind), dimension(:,:  ), allocatable :: w_av_1d,w_avxzg$/;"	v	module:mod_streams
+w_avzg	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: w_av,w_avzg$/;"	v	module:mod_streams
+w_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: w_gpu,/;"	v	module:mod_streams
+w_order	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: w_order$/;"	v	module:mod_streams
+wallpfield	mod_streams.F90	/^ real(mykind), dimension(:,:), allocatable :: wallpfield,/;"	v	module:mod_streams
+wallpfield_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:), allocatable :: wallpfield,wallpfield_gpu$/;"	v	module:mod_streams
+warning_input	check_input.F90	/^subroutine warning_input(/;"	s
+wbuf1r	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wbuf1r,/;"	v	module:mod_streams
+wbuf1r_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wbuf1r_gpu,/;"	v	module:mod_streams
+wbuf1s	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wbuf1s,/;"	v	module:mod_streams
+wbuf1s_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wbuf1s_gpu,/;"	v	module:mod_streams
+wbuf2r	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wbuf1r, wbuf2r,/;"	v	module:mod_streams
+wbuf2r_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wbuf1r_gpu, wbuf2r_gpu,/;"	v	module:mod_streams
+wbuf2s	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wbuf1s, wbuf2s,/;"	v	module:mod_streams
+wbuf2s_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wbuf1s_gpu, wbuf2s_gpu,/;"	v	module:mod_streams
+wbuf3r	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wbuf1r, wbuf2r, wbuf3r,/;"	v	module:mod_streams
+wbuf3r_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wbuf1r_gpu, wbuf2r_gpu, wbuf3r_gpu,/;"	v	module:mod_streams
+wbuf3s	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wbuf1s, wbuf2s, wbuf3s,/;"	v	module:mod_streams
+wbuf3s_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wbuf1s_gpu, wbuf2s_gpu, wbuf3s_gpu,/;"	v	module:mod_streams
+wbuf4r	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wbuf1r, wbuf2r, wbuf3r, wbuf4r,/;"	v	module:mod_streams
+wbuf4r_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wbuf1r_gpu, wbuf2r_gpu, wbuf3r_gpu, wbuf4r_gpu,/;"	v	module:mod_streams
+wbuf4s	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wbuf1s, wbuf2s, wbuf3s, wbuf4s,/;"	v	module:mod_streams
+wbuf4s_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wbuf1s_gpu, wbuf2s_gpu, wbuf3s_gpu, wbuf4s_gpu,/;"	v	module:mod_streams
+wbuf5r	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wbuf1r, wbuf2r, wbuf3r, wbuf4r, wbuf5r,/;"	v	module:mod_streams
+wbuf5r_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wbuf1r_gpu, wbuf2r_gpu, wbuf3r_gpu, wbuf4r_gpu, wbuf5r_gpu,/;"	v	module:mod_streams
+wbuf5s	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wbuf1s, wbuf2s, wbuf3s, wbuf4s, wbuf5s,/;"	v	module:mod_streams
+wbuf5s_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wbuf1s_gpu, wbuf2s_gpu, wbuf3s_gpu, wbuf4s_gpu, wbuf5s_gpu,/;"	v	module:mod_streams
+wbuf6r	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wbuf1r, wbuf2r, wbuf3r, wbuf4r, wbuf5r, wbuf6r$/;"	v	module:mod_streams
+wbuf6r_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wbuf1r_gpu, wbuf2r_gpu, wbuf3r_gpu, wbuf4r_gpu, wbuf5r_gpu, wbuf6r_gpu$/;"	v	module:mod_streams
+wbuf6s	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wbuf1s, wbuf2s, wbuf3s, wbuf4s, wbuf5s, wbuf6s$/;"	v	module:mod_streams
+wbuf6s_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wbuf1s_gpu, wbuf2s_gpu, wbuf3s_gpu, wbuf4s_gpu, wbuf5s_gpu, wbuf6s_gpu$/;"	v	module:mod_streams
+winf	mod_streams.F90	/^ real(mykind), dimension(:), allocatable  :: winf,/;"	v	module:mod_streams
+winf1	mod_streams.F90	/^ real(mykind), dimension(:), allocatable  :: winf,winf1$/;"	v	module:mod_streams
+winf1_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable  :: winf_gpu,winf1_gpu$/;"	v	module:mod_streams
+winf_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable  :: winf_gpu,/;"	v	module:mod_streams
+wmean	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: wmean,/;"	v	module:mod_streams
+wmean_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:), allocatable :: wmean,wmean_gpu$/;"	v	module:mod_streams
+write_wallpressure	write_wallpressure.F90	/^subroutine write_wallpressure$/;"	s
+writedf	writedf.F90	/^subroutine writedf$/;"	s
+writedf_serial	writedf.F90	/^subroutine writedf_serial$/;"	s
+writefield	writefield.F90	/^subroutine writefield$/;"	s
+writefieldvtk	writefieldvtk.F90	/^subroutine writefieldvtk$/;"	s
+writegridplot3d	writegridplot3d.F90	/^subroutine writegridplot3d$/;"	s
+writerst	writerst.F90	/^subroutine writerst$/;"	s
+writerst_serial	writerst.F90	/^subroutine writerst_serial$/;"	s
+writestat1d	writestat.F90	/^subroutine writestat1d$/;"	s
+writestat2d	writestat.F90	/^subroutine writestat2d$/;"	s
+writestat2d_serial	writestat.F90	/^subroutine writestat2d_serial$/;"	s
+writestatbl	writestatbl.F90	/^subroutine writestatbl$/;"	s
+writestatchann	writestatchann.F90	/^subroutine writestatchann$/;"	s
+writestatzbl	writestatzbl.F90	/^subroutine writestatzbl$/;"	s
+wv_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wv_gpu,/;"	v	module:mod_streams
+wv_trans_gpu	mod_streams.F90	/^ real(mykind), dimension(:,:,:,:), allocatable :: wv_gpu, wv_trans_gpu$/;"	v	module:mod_streams
+x	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: x,/;"	v	module:mod_streams
+x_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: x_gpu,/;"	v	module:mod_streams
+xg	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: xg,/;"	v	module:mod_streams
+xg_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: xg_gpu$/;"	v	module:mod_streams
+xgh	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: xgh,/;"	v	module:mod_streams
+xh	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: xh,/;"	v	module:mod_streams
+xh_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: xh_gpu,/;"	v	module:mod_streams
+ximp	mod_streams.F90	/^ real(mykind) :: ximp,/;"	v	module:mod_streams
+xlen_df	mod_streams.F90	/^ real(mykind), dimension(3) :: xlen_df$/;"	v	module:mod_streams
+xsh	mod_streams.F90	/^ real(mykind) :: ximp,thetas,deflec,tanhsfac,xsh$/;"	v	module:mod_streams
+xstat	mod_streams.F90	/^ real(mykind), dimension(:), allocatable     ::  xstat$/;"	v	module:mod_streams
+y	mod_streams.F90	/^ real(myk/;"	v	module:mod_streams
+y_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: x_gpu,y_gpu,/;"	v	module:mod_streams
+yg	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: xg,yg,/;"	v	module:mod_streams
+ygh	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: xgh,ygh,/;"	v	module:mod_streams
+yh	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: xh,yh,/;"	v	module:mod_streams
+yh_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: xh_gpu,yh_gpu,/;"	v	module:mod_streams
+yn	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: x,y,z,yn$/;"	v	module:mod_streams
+yn_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: x_gpu,y_gpu,z_gpu,yn_gpu$/;"	v	module:mod_streams
+z	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: x,y,z,/;"	v	module:mod_streams
+z_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: x_gpu,y_gpu,z_gpu,/;"	v	module:mod_streams
+zg	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: xg,yg,zg$/;"	v	module:mod_streams
+zgh	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: xgh,ygh,zgh$/;"	v	module:mod_streams
+zh	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: xh,yh,zh$/;"	v	module:mod_streams
+zh_gpu	mod_streams.F90	/^ real(mykind), dimension(:), allocatable :: xh_gpu,yh_gpu,zh_gpu$/;"	v	module:mod_streams
