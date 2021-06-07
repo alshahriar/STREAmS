@@ -33,3 +33,16 @@
 
 # Outputs
 *.bin
+*.vtr
+*.q
+cfz_*.dat
+plotxy_*.dat
+*.lock
+plot3dgrid.xyz
+rst.bak
+fort.*
+df.bak
+
+# Others
+tags
+
