@@ -35,7 +35,7 @@
   0.1      40.     8.     0.
       
  idiski   ncyc   cfl    nstep   nprint   io_type
-   0     50000   .75      1       1         2
+   1     100000   .75      1       1         2
       
  rm      re (friction)  twall/taw   visc_type  tref (dimensional)  dftscaling
  2.28      250.           1.            2         160.      0.75
@@ -46,8 +46,8 @@
  xstat
    10. 20. 30. 35. 40. 45. 50. 55. 60. 65.
  
- dtsave dtsave_restart  enable_plot3d   enable_vtk
-  5.       50.                1              1
+ dtsave dtsave_restart  enable_plot3d   enable_vtk      wallpressureFlag
+  1.       5.                1              1               1
 
   irand
    -1

@@ -38,10 +38,12 @@
 cfz_*.dat
 plotxy_*.dat
 *.lock
+field*.lock
 plot3dgrid.xyz
 rst.bak
 fort.*
 df.bak
+output_streams.dat
 
 # Others
 tags
