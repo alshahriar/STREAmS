@@ -7,13 +7,19 @@ subroutine write_wallpressure
 !
  integer :: i,j,k
  real(mykind) :: rho,rhou,rhov,rhow,rhoe,ri,uu,vv,ww,qq,pp
- integer, parameter :: delta_cyc_p=50, delta_cyc_s=50
- integer, parameter :: delta_restart_file=5000
- character(7) :: chicyc
+ integer, parameter :: delta_cyc_p=5, delta_cyc_s=50
+ integer, parameter :: delta_restart_file=500
+ character(7) :: chicyc, wallicyc
  logical :: async=.true.
  integer, parameter :: i_skip_p=1, k_skip_p=1
  integer, parameter :: i_skip_s=1, j_skip_s=1
  real(mykind), dimension(nx,nz) :: wallpfield2
+!
+ if(wallpressureFlag==1)then !by ASR
+  async=.false.
+ elseif(wallpressureFlag==2)then
+  async=.true.
+ endif
 !
  if (mod(icyc,delta_cyc_p)==0) then
 !
@@ -40,12 +46,12 @@ subroutine write_wallpressure
 !
   if(async) then
    if(icyc == ncyc0 + delta_cyc_p) then
-    open(122,file='WALLP/wallpressure_'//chx//'_'//chz//'_'//chicyc//'.bin',form='unformatted',asynchronous="yes")
+    open(122,file='wallpressure_'//chx//'_'//chz//'_'//chicyc//'.bin',form='unformatted',asynchronous="yes")
    else
     wait(122)
     if(mod(icyc-ncyc0,delta_restart_file) == 0) then
      close(122)
-     open(122,file='WALLP/wallpressure_'//chx//'_'//chz//'_'//chicyc//'.bin',form='unformatted',asynchronous="yes")
+     open(122,file='wallpressure_'//chx//'_'//chz//'_'//chicyc//'.bin',form='unformatted',asynchronous="yes")
     endif
    endif
   endif
@@ -56,7 +62,9 @@ subroutine write_wallpressure
    write(122, asynchronous="no") icyc,telaps,nx,nz !,i_skip_p,k_skip_p
    write(122, asynchronous="yes") wallpfield
   else
-   open(122,file='WALLP/wallpressure_'//chx//'_'//chz//'.bin',form='unformatted',position="append")
+!write(*,*) 'Writing Wall Pressure xx', ncyc0, chx, chz 
+   write(wallicyc,"(I7.7)") ncyc0
+   open(122,file='wallpressure_'//chx//'_'//chz//'_'//wallicyc//'.bin',form='unformatted',position="append")
    write(122) icyc,telaps,nx,nz !,i_skip_p,k_skip_p
    write(122) wallpfield
    close(122)
@@ -97,12 +105,12 @@ subroutine write_wallpressure
 !
   if(async) then
    if(icyc == ncyc0 + delta_cyc_p) then
-    open(144,file='WALLP/wallpressureNy_'//chx//'_'//chz//'_'//chicyc//'.bin',form='unformatted',asynchronous="yes")
+    open(144,file='wallpressureNy_'//chx//'_'//chz//'_'//chicyc//'.bin',form='unformatted',asynchronous="yes")
    else
     wait(144)
     if(mod(icyc-ncyc0,delta_restart_file) == 0) then
      close(144)
-     open(144,file='WALLP/wallpressureNy_'//chx//'_'//chz//'_'//chicyc//'.bin',form='unformatted',asynchronous="yes")
+     open(144,file='wallpressureNy_'//chx//'_'//chz//'_'//chicyc//'.bin',form='unformatted',asynchronous="yes")
     endif
    endif
   endif
@@ -113,7 +121,7 @@ subroutine write_wallpressure
    write(144, asynchronous="no") icyc,telaps,nx,nz !,i_skip_p,k_skip_p
    write(144, asynchronous="yes") wallpfield2
   else
-   open(144,file='WALLP/wallpressureNy_'//chx//'_'//chz//'.bin',form='unformatted',position="append")
+   open(144,file='wallpressureNy_'//chx//'_'//chz//'.bin',form='unformatted',position="append")
    write(144) icyc,telaps,nx,nz !,i_skip_p,k_skip_p
    write(144) wallpfield2
    close(144)
@@ -158,12 +166,12 @@ subroutine write_wallpressure
 ! 
    if(async) then
     if(icyc == ncyc0 + delta_cyc_s) then
-     open(133,file='SLICEXY/slicexy_'//chx//'_'//chicyc//'.bin',form='unformatted',asynchronous="yes")
+     open(133,file='slicexy_'//chx//'_'//chicyc//'.bin',form='unformatted',asynchronous="yes")
     else
      wait(133)
      if(mod(icyc-ncyc0,delta_restart_file) == 0) then
       close(133)
-      open(133,file='SLICEXY/slicexy_'//chx//'_'//chicyc//'.bin',form='unformatted',asynchronous="yes")
+      open(133,file='slicexy_'//chx//'_'//chicyc//'.bin',form='unformatted',asynchronous="yes")
      endif
     endif
    endif
@@ -174,7 +182,7 @@ subroutine write_wallpressure
      write(133, asynchronous="no") icyc,telaps,nx,ny !,i_skip_s,j_skip_s
      write(133, asynchronous="yes") slicexy
    else
-    open(133,file='SLICEXY/slicexy_'//chx//'.bin',form='unformatted',position="append")
+    open(133,file='slicexy_'//chx//'.bin',form='unformatted',position="append")
      write(133) icyc,telaps,nx,ny !,i_skip_s,j_skip_s
      write(133) slicexy
     close(133)

@@ -5,7 +5,9 @@ subroutine manage_solver
 !
  logical :: updatestat,savefield,saverst
 !
-call write_wallpressure !ASR - was commented out in master branch
+ if(wallpressureFlag>0)then
+  call write_wallpressure !ASR - was commented out in master branch
+ endif
 !
  updatestat = .false.
  savefield  = .false.
@@ -15,6 +17,8 @@ call write_wallpressure !ASR - was commented out in master branch
  if (telaps>tsol(istore)) savefield = .true.
  if (telaps>tsol_restart(istore_restart)) saverst = .true.
 !
+if(mod(icyc,5)==0) savefield = .true.
+
  if (updatestat.or.savefield.or.saverst) then
   call updateghost()
   call prims()

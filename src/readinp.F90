@@ -45,7 +45,7 @@ subroutine readinp
  read (12,*) (xstat(l),l=1,nstat)
  read (12,*)
  read (12,*)
- read (12,*) dtsave, dtsave_restart, enable_plot3d, enable_vtk
+ read (12,*) dtsave, dtsave_restart, enable_plot3d, enable_vtk, wallpressureFlag
  read (12,*)
  read (12,*)
  read (12,*) rand_start
