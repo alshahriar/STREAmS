@@ -3,7 +3,7 @@
 # SUPPORTED MODES  : opt, debug [default=debug]
 # SUPPORTED PRECISIONS (PREC) : single, double [default=double]
 #----------------------------------------------------------------------
-COMPILE = "intel"
+COMPILE = "gnu"
 MODE    = "opt"
 PREC    = "double"
 #----------------------------------------------------------------------
@@ -61,7 +61,7 @@ ifeq (${COMPILE},"pgi") # mpif90 shipped with PGI compiler or other MPI
 endif
 
 ifeq (${COMPILE},"intel") # mpiifort from IntelMPI
-    FC = mpif90
+    FC = ifort
     ifeq (${MODE},"opt") 
         OLEVEL = -O3
     else
@@ -72,9 +72,9 @@ endif
 ifeq (${COMPILE},"gnu") # mpif90 from MPI library
     FC = mpif90 
     ifeq (${MODE},"opt") 
-        OLEVEL = -O3
+        OLEVEL = -O3 -ffree-line-length-none 
     else
-        OLEVEL = -O2 -fbounds-check -g -fbacktrace -fdump-core -ffpe-trap=zero,invalid,overflow
+        OLEVEL = -O2  -ffree-line-length-none -fbounds-check -g -fbacktrace -fdump-core -ffpe-trap=zero,invalid,overflow
         #OLEVEL = -O2 -fbounds-check -g -fbacktrace -fdump-core
     endif
 endif
@@ -118,7 +118,7 @@ $(EXEC): $(OBJS) Makefile
 	$(FC) $(PRECFLAGS) $(OLEVEL) -o $@ $(OBJS) $(FCLIBS) $(LDFLAGS)
 
 %.o:%.F90 Makefile
-	$(FC) $(PRECFLAGS) $(INCLUDE) $(OLEVEL) -c $< -o $@
+	$(FC) $(PRECFLAGS) -l$(INCLUDE) $(OLEVEL) -c $< -o $@
 
 .PHONY: clean
 clean:
