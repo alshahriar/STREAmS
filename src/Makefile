@@ -3,7 +3,7 @@
 # SUPPORTED MODES  : opt, debug [default=debug]
 # SUPPORTED PRECISIONS (PREC) : single, double [default=double]
 #----------------------------------------------------------------------
-COMPILE = "gnu"
+COMPILE = "intel"
 MODE    = "opt"
 PREC    = "double"
 #----------------------------------------------------------------------
@@ -61,7 +61,7 @@ ifeq (${COMPILE},"pgi") # mpif90 shipped with PGI compiler or other MPI
 endif
 
 ifeq (${COMPILE},"intel") # mpiifort from IntelMPI
-    FC = mpiifort
+    FC = mpif90
     ifeq (${MODE},"opt") 
         OLEVEL = -O3
     else

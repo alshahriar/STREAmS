@@ -19,6 +19,19 @@ subroutine initurb
  real(mykind) :: vfluc,vv,vvmean
  real(mykind) :: wfluc,ww,wwmean
 !
+
+write(*,*) 'nxmax = ', nxmax
+write(*,*) 'nblocks(1) = ', nblocks(1)
+
+write(*,*) 'nymax = ', nymax
+write(*,*) 'nblocks(2) = ', nblocks(2)
+
+write(*,*) 'nzmax = ', nzmax
+write(*,*) 'nblocks(3) = ', nblocks(3)
+
+write(*,*) 'nx ny nz = ', nx, ny, nz
+
+
  nx_1 = nxmax/nblocks(1)
  nx_3 = nxmax/nblocks(3)
  ny_1 = nymax/nblocks(1)
