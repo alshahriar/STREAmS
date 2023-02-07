@@ -116,7 +116,7 @@ $(EXEC): $(OBJS) Makefile $(wildcard makefile.inc)
 	$(FC) $(PRECFLAGS) $(OLEVEL) -o $@ $(OBJS) $(FCLIBS) $(LDFLAGS)
 
 %.o:%.F90 Makefile $(wildcard makefile.inc)
-	$(FC) $(PRECFLAGS) $(INCLUDE) $(OLEVEL) -c $< -o $@
+	$(FC) $(PRECFLAGS) -l$(INCLUDE) $(OLEVEL) -c $< -o $@
 
 %.o:%.cpp Makefile $(wildcard makefile.inc)
 	$(CXX) $(PRECFLAGS) $(INCLUDE) -O2 -c $< -o $@
