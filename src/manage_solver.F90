@@ -5,7 +5,7 @@ subroutine manage_solver
 !
  logical :: updatestat,savefield,saverst
 !
-!call write_wallpressure
+call write_wallpressure
 !
  updatestat = .false.
  savefield  = .false.
