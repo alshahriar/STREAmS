@@ -70,7 +70,7 @@ module mod_streams
  real(mykind), dimension(0:nsolmax) :: tsol, tsol_restart
  real(mykind) :: dtsave, dtsave_restart
  integer :: iflow
- integer :: idiski, ndim, wallpressureFlag
+ integer :: idiski, ndim, wallpressureFlag, saveTimestep
  integer :: istore, istore_restart 
  integer :: iorder,iweno
  integer :: visc_type

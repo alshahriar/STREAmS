@@ -33,7 +33,8 @@ subroutine trasp_xz_to_yz(arr_xz,arr_yz,ndir,nx_1,ny_1,nz_3,nb1)
   nportion = ind/nb1
 !
   call mpi_alltoall(sendbuf,nportion,mpi_prec,recvbuf,nportion,mpi_prec,mp_cartx,iermpi)
-!
+    write(*,"(A,I10,I10,I10,I10,I10,I10)") 'Ckk 1aa',ind,nb1,nportion, nx_1,ny_1,nz_3
+  !
   ind = 0
   do m=1,nb1
    im = (m-1)*nx_1

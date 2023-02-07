@@ -17,7 +17,7 @@ subroutine manage_solver
  if (telaps>tsol(istore)) savefield = .true.
  if (telaps>tsol_restart(istore_restart)) saverst = .true.
 !
-if(mod(icyc,5)==0) savefield = .true.
+if(mod(icyc,saveTimestep)==0) savefield = .true.
 
  if (updatestat.or.savefield.or.saverst) then
   call updateghost()
